@@ -1,4 +1,0 @@
-journster.github.io
-===================
-
-landingpage
