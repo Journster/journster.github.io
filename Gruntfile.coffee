@@ -31,14 +31,11 @@ module.exports = (grunt) ->
     assemble:
       options: 
         flatten: true
-        layoutdir: 'src/layouts'
-      markdown:
-        options:
-          ext: '.md'
-          engine: 'handlebars'
-          layout: 'default.hbs'
+        layoutdir: '_src/layouts'
+        layout: 'default.hbs'
+      handlebars:
         files:
-          '/': ['src/content/*.md']
+          './': ['_src/content/*.hbs']
         
   grunt.registerTask 'default', ['assemble', 'style', 'copy']
   grunt.registerTask 'style', ['less', 'cssmin']
