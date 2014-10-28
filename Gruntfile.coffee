@@ -27,10 +27,23 @@ module.exports = (grunt) ->
         dest: 'fonts/'
         expand: true
         filter: 'isFile'
+
+    assemble:
+      options: 
+        flatten: true
+        layoutdir: 'src/layouts'
+      markdown:
+        options:
+          ext: '.md'
+          engine: 'handlebars'
+          layout: 'default.hbs'
+        files:
+          '/': ['src/content/*.md']
         
-  grunt.registerTask 'default', ['style', 'copy']
+  grunt.registerTask 'default', ['assemble', 'style', 'copy']
   grunt.registerTask 'style', ['less', 'cssmin']
 
   grunt.loadNpmTasks 'grunt-contrib-cssmin'
   grunt.loadNpmTasks 'grunt-contrib-less'
   grunt.loadNpmTasks 'grunt-contrib-copy'
+  grunt.loadNpmTasks 'assemble'
