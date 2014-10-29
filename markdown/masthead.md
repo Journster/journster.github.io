@@ -1,0 +1,1 @@
+Journster enables you to use popular build scripts such as [Grunt](http://gruntjs.com/) and package managers such as [Bower](http://bower.io/) and [npm](https://www.npmjs.org) to build your website without having to do the build on your local machine.

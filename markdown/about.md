@@ -20,10 +20,6 @@ Journster is a cloud based content management system for static websites.
 
 Currently the Grunt script must output files for the `gh-pages` branch in the `/dist` folder and Journster runs only the `default` Grunt task.
 
-### Example
-
-My repository [test](https://github.com/webjay/test) works. [Fork it](https://github.com/webjay/test/fork) and try Journster.
-
 ### Journster go wayback
 
 Journster version 1 was launched in 1998 as Webalogic ~ "Content management delivered online". At the time _cloud_ was called _hosted_ or _delivered online_. Journster v1 is template based, programming language independent and is still serving clients. This next version will only be for static websites.
