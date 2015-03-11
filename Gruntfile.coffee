@@ -6,9 +6,9 @@ module.exports = (grunt) ->
       bootstrap:
         options:
           paths: 'bower_components/bootstrap/less'
-        files: '_tmp/bootstrap.css': 'src/less/bootstrap.less'
+        files: '_tmp/bootstrap.css': 'less/bootstrap.less'
       main:
-        files: '_tmp/main.css': 'src/less/main.less'
+        files: '_tmp/main.css': 'less/main.less'
 
     cssmin:
       combine:
@@ -36,11 +36,11 @@ module.exports = (grunt) ->
     assemble:
       options: 
         flatten: true
-        layoutdir: 'src/layouts'
+        layoutdir: 'layouts'
         layout: 'default.hbs'
       handlebars:
         files:
-          './dist/': ['src/content/*.hbs']
+          './dist/': ['content/*.hbs']
         
   grunt.registerTask 'default', ['assemble', 'style', 'copy']
   grunt.registerTask 'style', ['less', 'cssmin']
