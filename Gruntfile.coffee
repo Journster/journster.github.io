@@ -6,16 +6,16 @@ module.exports = (grunt) ->
       bootstrap:
         options:
           paths: 'bower_components/bootstrap/less'
-        files: '_tmp/bootstrap.css': '_src/less/bootstrap.less'
+        files: '_tmp/bootstrap.css': 'src/less/bootstrap.less'
       main:
-        files: '_tmp/main.css': '_src/less/main.less'
+        files: '_tmp/main.css': 'src/less/main.less'
 
     cssmin:
       combine:
         options:
           keepSpecialComments: 0
         files:
-          'lib/the.css': [
+          'dist/lib/the.css': [
             '_tmp/bootstrap.css'
             '_tmp/main.css'
           ]
@@ -24,18 +24,23 @@ module.exports = (grunt) ->
       bootstrap:
         cwd: 'bower_components/bootstrap/dist/fonts/'
         src: '*'
-        dest: 'fonts/'
+        dest: 'dist/fonts/'
         expand: true
         filter: 'isFile'
-
+      files:
+        cwd: 'files/'
+        src: '*'
+        dest: 'dist/'
+        expand: true
+        
     assemble:
       options: 
         flatten: true
-        layoutdir: '_src/layouts'
+        layoutdir: 'src/layouts'
         layout: 'default.hbs'
       handlebars:
         files:
-          './': ['_src/content/*.hbs']
+          './dist/': ['src/content/*.hbs']
         
   grunt.registerTask 'default', ['assemble', 'style', 'copy']
   grunt.registerTask 'style', ['less', 'cssmin']
