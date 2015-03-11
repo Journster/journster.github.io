@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="eng">
+<head>
+  <title>About | Journster</title>
+  <link rel="stylesheet" href="/lib/the.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Journster">
+</head>
+<body>
+
+<div class="header">
+  <div class="container">
+    <header class="page-header">
+      <ul class="nav nav-pills pull-right">
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <div id="logo">
+        <h1 class="lead"><a href="/"><span class="jlogo"></span>Journster</a></h1>
+      </div>
+    </header>
+  </div>
+</div>
+
+
+<article class="container">
+<h2 id="about">About</h2>
+<p>Journster is a cloud based content management system for static websites.</p>
+<p><span class="bg-warning">
+  Journster is not ready for production yet.
+</span></p>
+<h3 id="what-does-journster-do-">What does Journster do?</h3>
+<ol>
+<li>When a file has been edited in a selected repository, <a href="https://github.com/">GitHub</a> sends Journster a webhook.</li>
+<li>Journster clones the repository.</li>
+<li>Install any <a href="https://www.npmjs.org/">npm</a> packages.</li>
+<li>Install any <a href="http://bower.io/">Bower</a> packages.</li>
+<li>Run the <code>default</code> <a href="http://gruntjs.com/">Grunt</a> task.</li>
+<li>Run the <code>default</code> <a href="http://gulpjs.com/">Gulp</a> task.</li>
+<li>If there were no errors, push all files from the <code>dist</code> folder to the repository&#39;s <code>gh-pages</code> branch.</li>
+<li>The repository&#39;s <a href="https://pages.github.com/">GitHub Pages</a> hosted website is now updated.</li>
+</ol>
+<h3 id="requirements">Requirements</h3>
+<p>Currently the Grunt or Gulp script must output files for the <code>gh-pages</code> branch in the <code>/dist</code> folder and Journster runs only the <code>default</code> task.</p>
+<h3 id="journster-go-wayback">Journster go wayback</h3>
+<p>Journster version 1 was launched in 1998 as Webalogic ~ &quot;Content management delivered online&quot;. At the time <em>cloud</em> was called <em>hosted</em> or <em>delivered online</em>. Journster v1 is template based, programming language independent and is still serving clients. This next version will only be for static websites.</p>
+
+</article>
+
+
+<div class="container">  
+  <footer>
+    <div class="pull-right">
+      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.journster.com/" data-text="Cloud based CMS for static websites" data-related="journster" data-count="none">Tweet</a>
+    </div>
+    <ul class="list-inline small text-muted">
+      <li>&copy; Journster</li>
+      <li><a href="mailto:support@journster.com" class="text-muted">support@journster.com</a></li>
+      <li class="hidden-xs">Made in NY by <a href="https://twitter.com/webjay" class="text-muted">@webjay</a></li>
+    </ul>
+  </footer>
+</div>
+
+<script src="//platform.twitter.com/widgets.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-183817-4', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</body>
+</html>
