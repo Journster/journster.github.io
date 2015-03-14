@@ -1,9 +1,28 @@
+---
+header: Cloud based CMS for static websites
+lead: markdown/lead.md
+features:
+  - columns:
+    - title: Edit anywhere
+      lead: Edit content via Journster, GitHub or your own editor.
+    - title: Free hosting
+      lead: Use GitHub Pages for free and let Journster handle it for you.
+    - title: Endless possibilities
+      lead: Utilize the many packages that npm and Bower provide.
+  - columns:
+    - title: Fastest possible
+      lead: With a static website, your site can't be faster.
+    - title: Global distribution
+      lead: Your site will be hosted by a global content distribution network.
+    - title: No backend
+      lead: Without a backend, you don't need nor be an engineer.
+---
 <div class="masthead">
   <div class="container">
-    <h2>Cloud based CMS for static websites</h2>
+    <h2>{{ header }}</h2>
     <div class="row">
       <div class="col-md-7 col-xs-12">
-        <div class="lead">{{{md 'markdown/masthead.md'}}}</div>
+        <div class="lead">{{{md lead}}}</div>
       </div>
       <div class="col-md-5">
         <div class="vspace-20 text-center">
@@ -24,30 +43,16 @@
 
 <div class="vspace-40">
   <div class="container">
+    {{#each features}}
     <div class="row">
-
-      <div class="col-md-4">
-        <h3>Edit anywhere</h3>
-        <p class="lead">
-          Edit content via Journster, GitHub or your own editor.
-        </p>
-      </div>
-
-      <div class="col-md-4">
-        <h3>Free hosting</h3>
-        <p class="lead">
-          Use GitHub Pages for free and let Journster handle it for you.
-        </p>
-      </div>
-
-      <div class="col-md-4">
-        <h3>Endless possibilities</h3>
-        <p class="lead">
-          Utilize the many packages that npm and Bower provide.
-        </p>
-      </div>
-
+        {{#each columns}}
+        <div class="col-md-4">
+          <h3>{{ this.title }}</h3>
+          <p class="lead">{{ this.lead }}</p>
+        </div>
+        {{/each}}
     </div>
+    {{/each}}
   </div>
 </div>
 

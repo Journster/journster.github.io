@@ -5,7 +5,7 @@ Journster is a cloud based content management system for static websites.
 ### Sign up
 
 <span class="bg-warning">Journster is in private beta.</span>
-Send us a <a href="https://twitter.com/journster">tweet</a> with a link to your site. If you fit our current product level, we'll get you on board for free.
+Send us a <a href="https://twitter.com/journster">tweet</a> with a link to your site. If it fits our current product level, we'll get you on board for free.
 
 ### What does Journster do?
 
