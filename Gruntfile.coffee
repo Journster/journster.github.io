@@ -9,12 +9,18 @@ module.exports = (grunt) ->
         files: '_tmp/bootstrap.css': 'less/bootstrap.less'
       main:
         files: '_tmp/main.css': 'less/main.less'
+      frontpage:
+        files: '_tmp/frontpage.css': 'less/frontpage.less'
 
     cssmin:
       combine:
         options:
           keepSpecialComments: 0
         files:
+          'dist/lib/frontpage.css': [
+            '_tmp/bootstrap.css'
+            '_tmp/frontpage.css'
+          ]
           'dist/lib/the.css': [
             '_tmp/bootstrap.css'
             '_tmp/main.css'
