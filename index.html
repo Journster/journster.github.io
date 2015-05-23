@@ -3,7 +3,7 @@
 <head>
   <title>Journster</title>
   <link rel="stylesheet" href="/lib/frontpage.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
   <meta name="generator" content="Journster">
 </head>
 <body>
@@ -30,11 +30,17 @@
 </div>
 
 
-<div class="signup text-center">
-  <form action="//journster.us2.list-manage.com/subscribe/post?u=228e04b4c873a783c32cdae85&amp;id=f4202e45f5" method="post" class="form-inline">
-    <input type="email" name="EMAIL" placeholder="your@email.com" class="form-control">
-    <input type="submit" value="Sign up" class="btn btn-default">
-  </form>
+<div class="signup">
+  <div class="container">
+    <form action="//journster.us2.list-manage.com/subscribe/post?u=228e04b4c873a783c32cdae85&amp;id=f4202e45f5" method="post" class="form-inline">
+      <div class="row">
+        <div class="col-md-offset-4 col-md-4 col-xs-offset-1 col-xs-10 text-center">
+          <input type="email" name="EMAIL" placeholder="your@email.com" class="form-control">
+          <input type="submit" value="Sign up" class="btn btn-success hidden-xs">
+        </div>
+      </div>
+    </form>
+  </div>
 </div>
 
 
@@ -44,18 +50,24 @@
     <div class="row">
         
         <div class="col-md-4">
-          <h3>Edit anywhere</h3>
-          <p class="lead">Edit content via Journster, GitHub or your own editor.</p>
+          <div class="feature">
+            <h3>Edit anywhere</h3>
+            <p class="lead">Edit content via Journster, GitHub or your own editor.</p>
+          </div>
         </div>
         
         <div class="col-md-4">
-          <h3>Pro hosting</h3>
-          <p class="lead">Use GitHub Pages (free) or AWS S3 and let Journster handle it for you.</p>
+          <div class="feature">
+            <h3>Pro hosting</h3>
+            <p class="lead">Use GitHub Pages (free) or AWS S3 and let Journster handle it for you.</p>
+          </div>
         </div>
         
         <div class="col-md-4">
-          <h3>Endless possibilities</h3>
-          <p class="lead">Utilize the many packages that npm and Bower provide.</p>
+          <div class="feature">
+            <h3>Endless possibilities</h3>
+            <p class="lead">Utilize the many packages that npm and Bower provide.</p>
+          </div>
         </div>
         
     </div>
@@ -63,18 +75,24 @@
     <div class="row">
         
         <div class="col-md-4">
-          <h3>Fastest possible</h3>
-          <p class="lead">With a static website, your site can&#x27;t be faster.</p>
+          <div class="feature">
+            <h3>Fastest possible</h3>
+            <p class="lead">With a static website, your site can&#x27;t be faster.</p>
+          </div>
         </div>
         
         <div class="col-md-4">
-          <h3>Global distribution</h3>
-          <p class="lead">Your site will be hosted by a global content distribution network.</p>
+          <div class="feature">
+            <h3>Global distribution</h3>
+            <p class="lead">Your site will be hosted by a global content distribution network.</p>
+          </div>
         </div>
         
         <div class="col-md-4">
-          <h3>No backend</h3>
-          <p class="lead">Without a backend, you don&#x27;t need nor be an engineer.</p>
+          <div class="feature">
+            <h3>No backend</h3>
+            <p class="lead">Without a backend, you don&#x27;t need nor be an engineer.</p>
+          </div>
         </div>
         
     </div>
@@ -82,6 +100,21 @@
   </div>
 </div>
 
+<footer class="footer">
+  <div class="container">
+    <hr>
+    <div class="pull-right">
+      <ul class="list-inline small text-muted">
+        <li class="hidden-xs">Made in NY</li>
+      </ul>
+    </div>
+    <ul class="list-inline small text-muted">
+      <li>&copy; Journster</li>
+      <li><a href="about.html" class="text-muted">About</a></li>
+      <li><a href="mailto:support@journster.com" class="text-muted">support@journster.com</a></li>
+    </ul>
+  </div>
+</footer>
 
 
 <script>
