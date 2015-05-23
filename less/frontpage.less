@@ -1,31 +1,53 @@
+@white: #fff;
+@navy: #001F3F;
+@blue: #0074D9;
+@green: #2ECC40;
+@lime: #01FF70;
+@gray: #aaa;
+@silver: #ddd;
+
+@signup-bgcolor: @blue;
+@signup-color: @navy;
+@features-bgcolor: @white;
+@features-color: @navy;
+
 html, body {
-  height: 100%;  
+  height: 100%;
 }
 
 body {
-  background-color: #001f3f;
-  color: #ddd;
+  background-color: @navy;
+  color: @silver;
 }
 
 .masthead {
-  height: 90%;
+  min-height: 90%;
   margin-top: 10%;
-  color: #0074D9;
+  color: @blue;
   h1 {
-    color: #ddd;
+    color: @silver;
   }
 }
 
-
-.features {
-  background-color: #ddd;
-  color: #001f3f;
-  padding: 40px 0;
-}
-
-
 .signup {
   padding: 40px 0;
-  background-color: #fff;
-  color: #111;
+  background-color: @signup-bgcolor;
+  color: @signup-color;
+}
+
+.features {
+  padding: 40px 0;
+  background-color: @features-bgcolor;
+  color: @features-color;
+  .feature {
+    h3 {
+      font-weight: 400;
+      letter-spacing: 0.1em;
+    }
+  }
+}
+
+.footer {
+  background-color: @white;
+  color: @gray;
 }
